@@ -1,0 +1,11 @@
+	component sistema is
+		port (
+			button_external_connection_export : out std_logic_vector(1 downto 0);         -- export
+			buzzer_external_connection_export : out std_logic_vector(9 downto 0);         -- export
+			clk_clk                           : in  std_logic                     := 'X'; -- clk
+			reset_reset_n                     : in  std_logic                     := 'X'; -- reset_n
+			svsd_external_connection_export   : out std_logic_vector(31 downto 0);        -- export
+			switch_external_connection_export : out std_logic_vector(7 downto 0)          -- export
+		);
+	end component sistema;
+

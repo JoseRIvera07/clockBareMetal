@@ -1,0 +1,582 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/and-h/Documents/GitHub/clockBareMetal/software/Clock/obj/default/runtime/sim/mentor
+vsistema_CPU
+!s110 1604453194
+!i10b 1
+!s100 :FK6AQ@j=N2zgSEPJenX_2
+I:A]@Mn[J2D19WJJOz5CDl1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604452865
+8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU.v
+FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU.v
+L0 9
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1604453194.000000
+!s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU.v|
+!s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU.v|-work|CPU|
+!i113 1
+o-work CPU
+Z3 tCvgOpt 0
+nsistema_@c@p@u
+vsistema_CPU_cpu
+Z4 !s110 1604453192
+!i10b 1
+!s100 ^2Q35K488dQICGdE<T@GF1
+IA3PZJ9HmeP=BJC_P=31ao0
+R1
+R0
+Z5 w1604452888
+Z6 8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu.v
+Z7 FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu.v
+L0 2834
+R2
+r1
+!s85 0
+31
+Z8 !s108 1604453191.000000
+Z9 !s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu.v|
+Z10 !s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu.v|-work|cpu|
+!i113 1
+Z11 o-work cpu
+R3
+nsistema_@c@p@u_cpu
+vsistema_CPU_cpu_debug_slave_sysclk
+R4
+!i10b 1
+!s100 1S;PP<noGh`I;9]UOSc2X2
+I_DZbimczXeBjWkB43eL063
+R1
+R0
+R5
+8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_sysclk.v
+FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_sysclk.v
+Z12 L0 21
+R2
+r1
+!s85 0
+31
+Z13 !s108 1604453192.000000
+!s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_sysclk.v|-work|cpu|
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_debug_slave_sysclk
+vsistema_CPU_cpu_debug_slave_tck
+R4
+!i10b 1
+!s100 mfg31eSdncSnXSJ]Z>[DU1
+InLH11c?dXO:ci>[L`BTN@3
+R1
+R0
+R5
+8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_tck.v
+FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_tck.v
+R12
+R2
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_tck.v|-work|cpu|
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_debug_slave_tck
+vsistema_CPU_cpu_debug_slave_wrapper
+R4
+!i10b 1
+!s100 SUkCDGS2]H<bjXlb[e03Z0
+IPgfL6khLF9F;9;<LQFcG?1
+R1
+R0
+R5
+8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_wrapper.v
+FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_wrapper.v
+R12
+R2
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_debug_slave_wrapper.v|-work|cpu|
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_debug_slave_wrapper
+vsistema_CPU_cpu_nios2_avalon_reg
+Z14 !s110 1604453191
+!i10b 1
+!s100 >Q3^LWKa0V=7Zj0gIA::c2
+IUM[lK0N`i_9AZ3nRmi2Eb0
+R1
+R0
+R5
+R6
+R7
+L0 2023
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_avalon_reg
+vsistema_CPU_cpu_nios2_oci
+R14
+!i10b 1
+!s100 N<?5e;ZQK;7JKNkB?hd`03
+IZz3jz@Jhzil9lhWG`lDja1
+R1
+R0
+R5
+R6
+R7
+L0 2362
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci
+vsistema_CPU_cpu_nios2_oci_break
+R14
+!i10b 1
+!s100 77zjm_iEIO@?Qm2bDeoVz2
+IXlDz`=6z4h8[_=?SeWYLn0
+R1
+R0
+R5
+R6
+R7
+L0 295
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_break
+vsistema_CPU_cpu_nios2_oci_compute_input_tm_cnt
+R14
+!i10b 1
+!s100 Z1dd_SPiQd3mUX_egNF1_3
+I`WWiP29CBY;T77Qf9HmS73
+R1
+R0
+R5
+R6
+R7
+L0 1265
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_compute_input_tm_cnt
+vsistema_CPU_cpu_nios2_oci_dbrk
+R14
+!i10b 1
+!s100 E<096;?m;FkV`_9_z1f[]1
+I6bMXVz4GLGchz]hohc`Kn1
+R1
+R0
+R5
+R6
+R7
+L0 795
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_dbrk
+vsistema_CPU_cpu_nios2_oci_debug
+R14
+!i10b 1
+!s100 3SKM^WKR53GHjYoCj5ePG0
+I7>NPbM:dXmoEBT10Q@^F]2
+R1
+R0
+R5
+R6
+R7
+L0 153
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_debug
+vsistema_CPU_cpu_nios2_oci_dtrace
+R14
+!i10b 1
+!s100 PU]I2imJWBR1bzoD]=N9G2
+IgX1=o8[]QPNRo8<d8VL8m1
+R1
+R0
+R5
+R6
+R7
+L0 1183
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_dtrace
+vsistema_CPU_cpu_nios2_oci_fifo
+R14
+!i10b 1
+!s100 n`a4e?ZEmHEj=JC?P0[M70
+IRl[UQXhSWD@AThkUF?j<T2
+R1
+R0
+R5
+R6
+R7
+L0 1427
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_fifo
+vsistema_CPU_cpu_nios2_oci_fifo_cnt_inc
+R14
+!i10b 1
+!s100 GX;^SJheN1g@cQXLOJU:n0
+IK=AUdmFoVH8C^RF0SWRz53
+R1
+R0
+R5
+R6
+R7
+L0 1380
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_fifo_cnt_inc
+vsistema_CPU_cpu_nios2_oci_fifo_wrptr_inc
+R14
+!i10b 1
+!s100 Hk13aPG531`@k]ZZVGi2W3
+IImC7igRRhOMRc@a?@aG>H0
+R1
+R0
+R5
+R6
+R7
+L0 1337
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_fifo_wrptr_inc
+vsistema_CPU_cpu_nios2_oci_im
+R14
+!i10b 1
+!s100 DU:J05R@G_O0@G]o_d<IF3
+IKH2]j9@Ieb<`013VJFP]O3
+R1
+R0
+R5
+R6
+R7
+L0 1936
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_im
+vsistema_CPU_cpu_nios2_oci_itrace
+R14
+!i10b 1
+!s100 k97IAM;j@Q4zc6ZL@HW;o1
+I;=@[L5oEMRW@0`zMYSD<Y3
+R1
+R0
+R5
+R6
+R7
+L0 982
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_itrace
+vsistema_CPU_cpu_nios2_oci_pib
+R14
+!i10b 1
+!s100 :A8W@Af2X=k`C[WCDzLOb2
+I@eVB;IGo;S18<3]WQg7PX2
+R1
+R0
+R5
+R6
+R7
+L0 1913
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_pib
+vsistema_CPU_cpu_nios2_oci_td_mode
+R14
+!i10b 1
+!s100 ?QF3n7G;_O`dA[Fk9>;X90
+IGff78dMhT>kX[NTm29ff=2
+R1
+R0
+R5
+R6
+R7
+L0 1115
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_td_mode
+vsistema_CPU_cpu_nios2_oci_xbrk
+R14
+!i10b 1
+!s100 U2lZ0>;fKckh;8M^ANm7[0
+Igb<5XUjJe3B@je7R[DSBL3
+R1
+R0
+R5
+R6
+R7
+L0 588
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_oci_xbrk
+vsistema_CPU_cpu_nios2_ocimem
+R14
+!i10b 1
+!s100 >Q`76g^5zbTc>zNi434V40
+I9U@U<_L?Y1J:gDmRZzWPE2
+R1
+R0
+R5
+R6
+R7
+L0 2181
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_ocimem
+vsistema_CPU_cpu_nios2_performance_monitors
+R14
+!i10b 1
+!s100 MFoF]]:ZnjcjfAB]lDGJ:3
+IE7K4UB6d_HX7m<?J2`UIk2
+R1
+R0
+R5
+R6
+R7
+L0 2006
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_nios2_performance_monitors
+vsistema_CPU_cpu_ociram_sp_ram_module
+R14
+!i10b 1
+!s100 8OJ^8gz9K]JIoTYkBmkQX2
+IXITCYTH]>NofPeZ_Rm<GL0
+R1
+R0
+R5
+R6
+R7
+L0 2116
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_ociram_sp_ram_module
+vsistema_CPU_cpu_register_bank_a_module
+R14
+!i10b 1
+!s100 CC09PPTAE9B_4BOn65RBi3
+I4;J0Yb_I<0i_YJ<VjRcZb3
+R1
+R0
+R5
+R6
+R7
+R12
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_register_bank_a_module
+vsistema_CPU_cpu_register_bank_b_module
+R14
+!i10b 1
+!s100 ;ZCkoIi144^oUN<MI2B9K3
+I@FR]1LW7[=FJ[D]b=KHSR3
+R1
+R0
+R5
+R6
+R7
+L0 87
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_register_bank_b_module
+vsistema_CPU_cpu_test_bench
+R4
+!i10b 1
+!s100 L;CnVKNX`bY^?dM@Y6BT`1
+IT=MA]0EjS[d8<Xhh2bk3X0
+R1
+R0
+R5
+8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_test_bench.v
+FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_test_bench.v
+R12
+R2
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_test_bench.v|
+!s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_CPU_cpu_test_bench.v|-work|cpu|
+!i113 1
+R11
+R3
+nsistema_@c@p@u_cpu_test_bench
