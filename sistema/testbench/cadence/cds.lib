@@ -36,13 +36,13 @@ DEFINE mm_interconnect_0                           ./libraries/mm_interconnect_0
 DEFINE UART                                        ./libraries/UART/                                       
 DEFINE TIMER                                       ./libraries/TIMER/                                      
 DEFINE SWITCH                                      ./libraries/SWITCH/                                     
-DEFINE SVSD                                        ./libraries/SVSD/                                       
+DEFINE SVSD0                                       ./libraries/SVSD0/                                      
 DEFINE RAM                                         ./libraries/RAM/                                        
 DEFINE CPU                                         ./libraries/CPU/                                        
 DEFINE BUZZER                                      ./libraries/BUZZER/                                     
 DEFINE BUTTON                                      ./libraries/BUTTON/                                     
 DEFINE sistema_inst_switch_external_connection_bfm ./libraries/sistema_inst_switch_external_connection_bfm/
-DEFINE sistema_inst_svsd_external_connection_bfm   ./libraries/sistema_inst_svsd_external_connection_bfm/  
+DEFINE sistema_inst_svsd0_external_connection_bfm  ./libraries/sistema_inst_svsd0_external_connection_bfm/ 
 DEFINE sistema_inst_reset_bfm                      ./libraries/sistema_inst_reset_bfm/                     
 DEFINE sistema_inst_clk_bfm                        ./libraries/sistema_inst_clk_bfm/                       
 DEFINE sistema_inst_buzzer_external_connection_bfm ./libraries/sistema_inst_buzzer_external_connection_bfm/

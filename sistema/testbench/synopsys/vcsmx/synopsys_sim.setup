@@ -29,13 +29,13 @@ mm_interconnect_0:                           ./libraries/mm_interconnect_0/
 UART:                                        ./libraries/UART/                                       
 TIMER:                                       ./libraries/TIMER/                                      
 SWITCH:                                      ./libraries/SWITCH/                                     
-SVSD:                                        ./libraries/SVSD/                                       
+SVSD0:                                       ./libraries/SVSD0/                                      
 RAM:                                         ./libraries/RAM/                                        
 CPU:                                         ./libraries/CPU/                                        
 BUZZER:                                      ./libraries/BUZZER/                                     
 BUTTON:                                      ./libraries/BUTTON/                                     
 sistema_inst_switch_external_connection_bfm: ./libraries/sistema_inst_switch_external_connection_bfm/
-sistema_inst_svsd_external_connection_bfm:   ./libraries/sistema_inst_svsd_external_connection_bfm/  
+sistema_inst_svsd0_external_connection_bfm:  ./libraries/sistema_inst_svsd0_external_connection_bfm/ 
 sistema_inst_reset_bfm:                      ./libraries/sistema_inst_reset_bfm/                     
 sistema_inst_clk_bfm:                        ./libraries/sistema_inst_clk_bfm/                       
 sistema_inst_buzzer_external_connection_bfm: ./libraries/sistema_inst_buzzer_external_connection_bfm/

@@ -198,9 +198,9 @@
    type="VERILOG"
    library="SWITCH" />
  <file
-   path="sistema/testbench/sistema_tb/simulation/submodules/sistema_SVSD.v"
+   path="sistema/testbench/sistema_tb/simulation/submodules/sistema_SVSD0.v"
    type="VERILOG"
-   library="SVSD" />
+   library="SVSD0" />
  <file
    path="sistema/testbench/sistema_tb/simulation/submodules/sistema_RAM.hex"
    type="HEX"
@@ -228,7 +228,7 @@
  <file
    path="sistema/testbench/sistema_tb/simulation/submodules/altera_conduit_bfm_0003.sv"
    type="SYSTEM_VERILOG"
-   library="sistema_inst_svsd_external_connection_bfm" />
+   library="sistema_inst_svsd0_external_connection_bfm" />
  <file
    path="sistema/testbench/sistema_tb/simulation/submodules/altera_avalon_reset_source.sv"
    type="SYSTEM_VERILOG"

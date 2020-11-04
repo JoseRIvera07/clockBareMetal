@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2020.11.03.19:21:31
+# ACDS 18.1 625 win32 2020.11.04.11:16:37
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2020.11.03.19:21:31
+# ACDS 18.1 625 win32 2020.11.04.11:16:37
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="sistema_tb"
@@ -183,7 +183,7 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_UART.v \
   $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_TIMER.v \
   $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_SWITCH.v \
-  $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_SVSD.v \
+  $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_SVSD0.v \
   $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_RAM.v \
   $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_CPU.v \
   $QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_BUZZER.v \

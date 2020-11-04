@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2020.11.03.19:21:31
+# ACDS 18.1 625 win32 2020.11.04.11:16:37
 # ----------------------------------------
 # Auto-generated simulation script rivierapro_setup.tcl
 # ----------------------------------------
@@ -236,8 +236,8 @@ ensure_lib                                             ./libraries/TIMER
 vmap       TIMER                                       ./libraries/TIMER                                      
 ensure_lib                                             ./libraries/SWITCH                                     
 vmap       SWITCH                                      ./libraries/SWITCH                                     
-ensure_lib                                             ./libraries/SVSD                                       
-vmap       SVSD                                        ./libraries/SVSD                                       
+ensure_lib                                             ./libraries/SVSD0                                      
+vmap       SVSD0                                       ./libraries/SVSD0                                      
 ensure_lib                                             ./libraries/RAM                                        
 vmap       RAM                                         ./libraries/RAM                                        
 ensure_lib                                             ./libraries/CPU                                        
@@ -248,8 +248,8 @@ ensure_lib                                             ./libraries/BUTTON
 vmap       BUTTON                                      ./libraries/BUTTON                                     
 ensure_lib                                             ./libraries/sistema_inst_switch_external_connection_bfm
 vmap       sistema_inst_switch_external_connection_bfm ./libraries/sistema_inst_switch_external_connection_bfm
-ensure_lib                                             ./libraries/sistema_inst_svsd_external_connection_bfm  
-vmap       sistema_inst_svsd_external_connection_bfm   ./libraries/sistema_inst_svsd_external_connection_bfm  
+ensure_lib                                             ./libraries/sistema_inst_svsd0_external_connection_bfm 
+vmap       sistema_inst_svsd0_external_connection_bfm  ./libraries/sistema_inst_svsd0_external_connection_bfm 
 ensure_lib                                             ./libraries/sistema_inst_reset_bfm                     
 vmap       sistema_inst_reset_bfm                      ./libraries/sistema_inst_reset_bfm                     
 ensure_lib                                             ./libraries/sistema_inst_clk_bfm                       
@@ -314,13 +314,13 @@ alias com {
   eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_UART.v"                                                                              -work UART                                       
   eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_TIMER.v"                                                                             -work TIMER                                      
   eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_SWITCH.v"                                                                            -work SWITCH                                     
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_SVSD.v"                                                                              -work SVSD                                       
+  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_SVSD0.v"                                                                             -work SVSD0                                      
   eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_RAM.v"                                                                               -work RAM                                        
   eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_CPU.v"                                                                               -work CPU                                        
   eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_BUZZER.v"                                                                            -work BUZZER                                     
   eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/sistema_tb/simulation/submodules/sistema_BUTTON.v"                                                                            -work BUTTON                                     
   eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/sistema_tb/simulation/submodules/altera_conduit_bfm_0004.sv"                                     -l altera_common_sv_packages -work sistema_inst_switch_external_connection_bfm
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/sistema_tb/simulation/submodules/altera_conduit_bfm_0003.sv"                                     -l altera_common_sv_packages -work sistema_inst_svsd_external_connection_bfm  
+  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/sistema_tb/simulation/submodules/altera_conduit_bfm_0003.sv"                                     -l altera_common_sv_packages -work sistema_inst_svsd0_external_connection_bfm 
   eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/sistema_tb/simulation/submodules/altera_avalon_reset_source.sv"                                  -l altera_common_sv_packages -work sistema_inst_reset_bfm                     
   eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/sistema_tb/simulation/submodules/altera_avalon_clock_source.sv"                                  -l altera_common_sv_packages -work sistema_inst_clk_bfm                       
   eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/sistema_tb/simulation/submodules/altera_conduit_bfm_0002.sv"                                     -l altera_common_sv_packages -work sistema_inst_buzzer_external_connection_bfm
@@ -333,14 +333,14 @@ alias com {
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  eval vsim +access +r -t ps $ELAB_OPTIONS -L work -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux_001 -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L CPU_data_master_agent -L UART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L SWITCH -L SVSD -L RAM -L CPU -L BUZZER -L BUTTON -L sistema_inst_switch_external_connection_bfm -L sistema_inst_svsd_external_connection_bfm -L sistema_inst_reset_bfm -L sistema_inst_clk_bfm -L sistema_inst_buzzer_external_connection_bfm -L sistema_inst_button_external_connection_bfm -L sistema_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
+  eval vsim +access +r -t ps $ELAB_OPTIONS -L work -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux_001 -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L CPU_data_master_agent -L UART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L SWITCH -L SVSD0 -L RAM -L CPU -L BUZZER -L BUTTON -L sistema_inst_switch_external_connection_bfm -L sistema_inst_svsd0_external_connection_bfm -L sistema_inst_reset_bfm -L sistema_inst_clk_bfm -L sistema_inst_buzzer_external_connection_bfm -L sistema_inst_button_external_connection_bfm -L sistema_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with -dbg -O2 option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  eval vsim -dbg -O2 +access +r -t ps $ELAB_OPTIONS -L work -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux_001 -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L CPU_data_master_agent -L UART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L SWITCH -L SVSD -L RAM -L CPU -L BUZZER -L BUTTON -L sistema_inst_switch_external_connection_bfm -L sistema_inst_svsd_external_connection_bfm -L sistema_inst_reset_bfm -L sistema_inst_clk_bfm -L sistema_inst_buzzer_external_connection_bfm -L sistema_inst_button_external_connection_bfm -L sistema_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
+  eval vsim -dbg -O2 +access +r -t ps $ELAB_OPTIONS -L work -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux_001 -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L CPU_data_master_agent -L UART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L SWITCH -L SVSD0 -L RAM -L CPU -L BUZZER -L BUTTON -L sistema_inst_switch_external_connection_bfm -L sistema_inst_svsd0_external_connection_bfm -L sistema_inst_reset_bfm -L sistema_inst_clk_bfm -L sistema_inst_buzzer_external_connection_bfm -L sistema_inst_button_external_connection_bfm -L sistema_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------

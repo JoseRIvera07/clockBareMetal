@@ -4,12 +4,17 @@
 
 `timescale 1 ps / 1 ps
 module sistema (
-		output wire [1:0]  button_external_connection_export, // button_external_connection.export
-		output wire [9:0]  buzzer_external_connection_export, // buzzer_external_connection.export
-		input  wire        clk_clk,                           //                        clk.clk
-		input  wire        reset_reset_n,                     //                      reset.reset_n
-		output wire [31:0] svsd_external_connection_export,   //   svsd_external_connection.export
-		output wire [7:0]  switch_external_connection_export  // switch_external_connection.export
+		output wire [1:0] button_external_connection_export, // button_external_connection.export
+		output wire [9:0] buzzer_external_connection_export, // buzzer_external_connection.export
+		input  wire       clk_clk,                           //                        clk.clk
+		input  wire       reset_reset_n,                     //                      reset.reset_n
+		output wire [3:0] svsd0_external_connection_export,  //  svsd0_external_connection.export
+		output wire [3:0] svsd1_external_connection_export,  //  svsd1_external_connection.export
+		output wire [3:0] svsd2_external_connection_export,  //  svsd2_external_connection.export
+		output wire [3:0] svsd3_external_connection_export,  //  svsd3_external_connection.export
+		output wire [3:0] svsd4_external_connection_export,  //  svsd4_external_connection.export
+		output wire [3:0] svsd5_external_connection_export,  //  svsd5_external_connection.export
+		output wire [7:0] switch_external_connection_export  // switch_external_connection.export
 	);
 
 	wire  [31:0] cpu_data_master_readdata;                             // mm_interconnect_0:CPU_data_master_readdata -> CPU:d_readdata
@@ -44,11 +49,6 @@ module sistema (
 	wire   [2:0] mm_interconnect_0_timer_s1_address;                   // mm_interconnect_0:TIMER_s1_address -> TIMER:address
 	wire         mm_interconnect_0_timer_s1_write;                     // mm_interconnect_0:TIMER_s1_write -> TIMER:write_n
 	wire  [15:0] mm_interconnect_0_timer_s1_writedata;                 // mm_interconnect_0:TIMER_s1_writedata -> TIMER:writedata
-	wire         mm_interconnect_0_svsd_s1_chipselect;                 // mm_interconnect_0:SVSD_s1_chipselect -> SVSD:chipselect
-	wire  [31:0] mm_interconnect_0_svsd_s1_readdata;                   // SVSD:readdata -> mm_interconnect_0:SVSD_s1_readdata
-	wire   [1:0] mm_interconnect_0_svsd_s1_address;                    // mm_interconnect_0:SVSD_s1_address -> SVSD:address
-	wire         mm_interconnect_0_svsd_s1_write;                      // mm_interconnect_0:SVSD_s1_write -> SVSD:write_n
-	wire  [31:0] mm_interconnect_0_svsd_s1_writedata;                  // mm_interconnect_0:SVSD_s1_writedata -> SVSD:writedata
 	wire         mm_interconnect_0_button_s1_chipselect;               // mm_interconnect_0:BUTTON_s1_chipselect -> BUTTON:chipselect
 	wire  [31:0] mm_interconnect_0_button_s1_readdata;                 // BUTTON:readdata -> mm_interconnect_0:BUTTON_s1_readdata
 	wire   [1:0] mm_interconnect_0_button_s1_address;                  // mm_interconnect_0:BUTTON_s1_address -> BUTTON:address
@@ -71,10 +71,40 @@ module sistema (
 	wire         mm_interconnect_0_ram_s1_write;                       // mm_interconnect_0:RAM_s1_write -> RAM:write
 	wire  [31:0] mm_interconnect_0_ram_s1_writedata;                   // mm_interconnect_0:RAM_s1_writedata -> RAM:writedata
 	wire         mm_interconnect_0_ram_s1_clken;                       // mm_interconnect_0:RAM_s1_clken -> RAM:clken
+	wire         mm_interconnect_0_svsd0_s1_chipselect;                // mm_interconnect_0:SVSD0_s1_chipselect -> SVSD0:chipselect
+	wire  [31:0] mm_interconnect_0_svsd0_s1_readdata;                  // SVSD0:readdata -> mm_interconnect_0:SVSD0_s1_readdata
+	wire   [1:0] mm_interconnect_0_svsd0_s1_address;                   // mm_interconnect_0:SVSD0_s1_address -> SVSD0:address
+	wire         mm_interconnect_0_svsd0_s1_write;                     // mm_interconnect_0:SVSD0_s1_write -> SVSD0:write_n
+	wire  [31:0] mm_interconnect_0_svsd0_s1_writedata;                 // mm_interconnect_0:SVSD0_s1_writedata -> SVSD0:writedata
+	wire         mm_interconnect_0_svsd1_s1_chipselect;                // mm_interconnect_0:SVSD1_s1_chipselect -> SVSD1:chipselect
+	wire  [31:0] mm_interconnect_0_svsd1_s1_readdata;                  // SVSD1:readdata -> mm_interconnect_0:SVSD1_s1_readdata
+	wire   [1:0] mm_interconnect_0_svsd1_s1_address;                   // mm_interconnect_0:SVSD1_s1_address -> SVSD1:address
+	wire         mm_interconnect_0_svsd1_s1_write;                     // mm_interconnect_0:SVSD1_s1_write -> SVSD1:write_n
+	wire  [31:0] mm_interconnect_0_svsd1_s1_writedata;                 // mm_interconnect_0:SVSD1_s1_writedata -> SVSD1:writedata
+	wire         mm_interconnect_0_svsd2_s1_chipselect;                // mm_interconnect_0:SVSD2_s1_chipselect -> SVSD2:chipselect
+	wire  [31:0] mm_interconnect_0_svsd2_s1_readdata;                  // SVSD2:readdata -> mm_interconnect_0:SVSD2_s1_readdata
+	wire   [1:0] mm_interconnect_0_svsd2_s1_address;                   // mm_interconnect_0:SVSD2_s1_address -> SVSD2:address
+	wire         mm_interconnect_0_svsd2_s1_write;                     // mm_interconnect_0:SVSD2_s1_write -> SVSD2:write_n
+	wire  [31:0] mm_interconnect_0_svsd2_s1_writedata;                 // mm_interconnect_0:SVSD2_s1_writedata -> SVSD2:writedata
+	wire         mm_interconnect_0_svsd3_s1_chipselect;                // mm_interconnect_0:SVSD3_s1_chipselect -> SVSD3:chipselect
+	wire  [31:0] mm_interconnect_0_svsd3_s1_readdata;                  // SVSD3:readdata -> mm_interconnect_0:SVSD3_s1_readdata
+	wire   [1:0] mm_interconnect_0_svsd3_s1_address;                   // mm_interconnect_0:SVSD3_s1_address -> SVSD3:address
+	wire         mm_interconnect_0_svsd3_s1_write;                     // mm_interconnect_0:SVSD3_s1_write -> SVSD3:write_n
+	wire  [31:0] mm_interconnect_0_svsd3_s1_writedata;                 // mm_interconnect_0:SVSD3_s1_writedata -> SVSD3:writedata
+	wire         mm_interconnect_0_svsd4_s1_chipselect;                // mm_interconnect_0:SVSD4_s1_chipselect -> SVSD4:chipselect
+	wire  [31:0] mm_interconnect_0_svsd4_s1_readdata;                  // SVSD4:readdata -> mm_interconnect_0:SVSD4_s1_readdata
+	wire   [1:0] mm_interconnect_0_svsd4_s1_address;                   // mm_interconnect_0:SVSD4_s1_address -> SVSD4:address
+	wire         mm_interconnect_0_svsd4_s1_write;                     // mm_interconnect_0:SVSD4_s1_write -> SVSD4:write_n
+	wire  [31:0] mm_interconnect_0_svsd4_s1_writedata;                 // mm_interconnect_0:SVSD4_s1_writedata -> SVSD4:writedata
+	wire         mm_interconnect_0_svsd5_s1_chipselect;                // mm_interconnect_0:SVSD5_s1_chipselect -> SVSD5:chipselect
+	wire  [31:0] mm_interconnect_0_svsd5_s1_readdata;                  // SVSD5:readdata -> mm_interconnect_0:SVSD5_s1_readdata
+	wire   [1:0] mm_interconnect_0_svsd5_s1_address;                   // mm_interconnect_0:SVSD5_s1_address -> SVSD5:address
+	wire         mm_interconnect_0_svsd5_s1_write;                     // mm_interconnect_0:SVSD5_s1_write -> SVSD5:write_n
+	wire  [31:0] mm_interconnect_0_svsd5_s1_writedata;                 // mm_interconnect_0:SVSD5_s1_writedata -> SVSD5:writedata
 	wire         irq_mapper_receiver0_irq;                             // TIMER:irq -> irq_mapper:receiver0_irq
 	wire         irq_mapper_receiver1_irq;                             // UART:av_irq -> irq_mapper:receiver1_irq
 	wire  [31:0] cpu_irq_irq;                                          // irq_mapper:sender_irq -> CPU:irq
-	wire         rst_controller_reset_out_reset;                       // rst_controller:reset_out -> [BUTTON:reset_n, BUZZER:reset_n, CPU:reset_n, SVSD:reset_n, SWITCH:reset_n, TIMER:reset_n, irq_mapper:reset, mm_interconnect_0:CPU_reset_reset_bridge_in_reset_reset, rst_translator:in_reset]
+	wire         rst_controller_reset_out_reset;                       // rst_controller:reset_out -> [BUTTON:reset_n, BUZZER:reset_n, CPU:reset_n, SVSD0:reset_n, SVSD1:reset_n, SVSD2:reset_n, SVSD3:reset_n, SVSD4:reset_n, SVSD5:reset_n, SWITCH:reset_n, TIMER:reset_n, irq_mapper:reset, mm_interconnect_0:CPU_reset_reset_bridge_in_reset_reset, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                   // rst_controller:reset_req -> [CPU:reset_req, rst_translator:reset_req_in]
 	wire         cpu_debug_reset_request_reset;                        // CPU:debug_reset_request -> [rst_controller:reset_in1, rst_controller_001:reset_in0]
 	wire         rst_controller_001_reset_out_reset;                   // rst_controller_001:reset_out -> [RAM:reset, mm_interconnect_0:RAM_reset1_reset_bridge_in_reset_reset]
@@ -146,15 +176,70 @@ module sistema (
 		.freeze     (1'b0)                                    // (terminated)
 	);
 
-	sistema_SVSD svsd (
-		.clk        (clk_clk),                              //                 clk.clk
-		.reset_n    (~rst_controller_reset_out_reset),      //               reset.reset_n
-		.address    (mm_interconnect_0_svsd_s1_address),    //                  s1.address
-		.write_n    (~mm_interconnect_0_svsd_s1_write),     //                    .write_n
-		.writedata  (mm_interconnect_0_svsd_s1_writedata),  //                    .writedata
-		.chipselect (mm_interconnect_0_svsd_s1_chipselect), //                    .chipselect
-		.readdata   (mm_interconnect_0_svsd_s1_readdata),   //                    .readdata
-		.out_port   (svsd_external_connection_export)       // external_connection.export
+	sistema_SVSD0 svsd0 (
+		.clk        (clk_clk),                               //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address    (mm_interconnect_0_svsd0_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_svsd0_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_svsd0_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_svsd0_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_svsd0_s1_readdata),   //                    .readdata
+		.out_port   (svsd0_external_connection_export)       // external_connection.export
+	);
+
+	sistema_SVSD0 svsd1 (
+		.clk        (clk_clk),                               //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address    (mm_interconnect_0_svsd1_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_svsd1_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_svsd1_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_svsd1_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_svsd1_s1_readdata),   //                    .readdata
+		.out_port   (svsd1_external_connection_export)       // external_connection.export
+	);
+
+	sistema_SVSD0 svsd2 (
+		.clk        (clk_clk),                               //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address    (mm_interconnect_0_svsd2_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_svsd2_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_svsd2_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_svsd2_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_svsd2_s1_readdata),   //                    .readdata
+		.out_port   (svsd2_external_connection_export)       // external_connection.export
+	);
+
+	sistema_SVSD0 svsd3 (
+		.clk        (clk_clk),                               //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address    (mm_interconnect_0_svsd3_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_svsd3_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_svsd3_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_svsd3_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_svsd3_s1_readdata),   //                    .readdata
+		.out_port   (svsd3_external_connection_export)       // external_connection.export
+	);
+
+	sistema_SVSD0 svsd4 (
+		.clk        (clk_clk),                               //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address    (mm_interconnect_0_svsd4_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_svsd4_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_svsd4_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_svsd4_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_svsd4_s1_readdata),   //                    .readdata
+		.out_port   (svsd4_external_connection_export)       // external_connection.export
+	);
+
+	sistema_SVSD0 svsd5 (
+		.clk        (clk_clk),                               //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address    (mm_interconnect_0_svsd5_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_svsd5_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_svsd5_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_svsd5_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_svsd5_s1_readdata),   //                    .readdata
+		.out_port   (svsd5_external_connection_export)       // external_connection.export
 	);
 
 	sistema_SWITCH switch (
@@ -234,11 +319,36 @@ module sistema (
 		.RAM_s1_byteenable                      (mm_interconnect_0_ram_s1_byteenable),                  //                                 .byteenable
 		.RAM_s1_chipselect                      (mm_interconnect_0_ram_s1_chipselect),                  //                                 .chipselect
 		.RAM_s1_clken                           (mm_interconnect_0_ram_s1_clken),                       //                                 .clken
-		.SVSD_s1_address                        (mm_interconnect_0_svsd_s1_address),                    //                          SVSD_s1.address
-		.SVSD_s1_write                          (mm_interconnect_0_svsd_s1_write),                      //                                 .write
-		.SVSD_s1_readdata                       (mm_interconnect_0_svsd_s1_readdata),                   //                                 .readdata
-		.SVSD_s1_writedata                      (mm_interconnect_0_svsd_s1_writedata),                  //                                 .writedata
-		.SVSD_s1_chipselect                     (mm_interconnect_0_svsd_s1_chipselect),                 //                                 .chipselect
+		.SVSD0_s1_address                       (mm_interconnect_0_svsd0_s1_address),                   //                         SVSD0_s1.address
+		.SVSD0_s1_write                         (mm_interconnect_0_svsd0_s1_write),                     //                                 .write
+		.SVSD0_s1_readdata                      (mm_interconnect_0_svsd0_s1_readdata),                  //                                 .readdata
+		.SVSD0_s1_writedata                     (mm_interconnect_0_svsd0_s1_writedata),                 //                                 .writedata
+		.SVSD0_s1_chipselect                    (mm_interconnect_0_svsd0_s1_chipselect),                //                                 .chipselect
+		.SVSD1_s1_address                       (mm_interconnect_0_svsd1_s1_address),                   //                         SVSD1_s1.address
+		.SVSD1_s1_write                         (mm_interconnect_0_svsd1_s1_write),                     //                                 .write
+		.SVSD1_s1_readdata                      (mm_interconnect_0_svsd1_s1_readdata),                  //                                 .readdata
+		.SVSD1_s1_writedata                     (mm_interconnect_0_svsd1_s1_writedata),                 //                                 .writedata
+		.SVSD1_s1_chipselect                    (mm_interconnect_0_svsd1_s1_chipselect),                //                                 .chipselect
+		.SVSD2_s1_address                       (mm_interconnect_0_svsd2_s1_address),                   //                         SVSD2_s1.address
+		.SVSD2_s1_write                         (mm_interconnect_0_svsd2_s1_write),                     //                                 .write
+		.SVSD2_s1_readdata                      (mm_interconnect_0_svsd2_s1_readdata),                  //                                 .readdata
+		.SVSD2_s1_writedata                     (mm_interconnect_0_svsd2_s1_writedata),                 //                                 .writedata
+		.SVSD2_s1_chipselect                    (mm_interconnect_0_svsd2_s1_chipselect),                //                                 .chipselect
+		.SVSD3_s1_address                       (mm_interconnect_0_svsd3_s1_address),                   //                         SVSD3_s1.address
+		.SVSD3_s1_write                         (mm_interconnect_0_svsd3_s1_write),                     //                                 .write
+		.SVSD3_s1_readdata                      (mm_interconnect_0_svsd3_s1_readdata),                  //                                 .readdata
+		.SVSD3_s1_writedata                     (mm_interconnect_0_svsd3_s1_writedata),                 //                                 .writedata
+		.SVSD3_s1_chipselect                    (mm_interconnect_0_svsd3_s1_chipselect),                //                                 .chipselect
+		.SVSD4_s1_address                       (mm_interconnect_0_svsd4_s1_address),                   //                         SVSD4_s1.address
+		.SVSD4_s1_write                         (mm_interconnect_0_svsd4_s1_write),                     //                                 .write
+		.SVSD4_s1_readdata                      (mm_interconnect_0_svsd4_s1_readdata),                  //                                 .readdata
+		.SVSD4_s1_writedata                     (mm_interconnect_0_svsd4_s1_writedata),                 //                                 .writedata
+		.SVSD4_s1_chipselect                    (mm_interconnect_0_svsd4_s1_chipselect),                //                                 .chipselect
+		.SVSD5_s1_address                       (mm_interconnect_0_svsd5_s1_address),                   //                         SVSD5_s1.address
+		.SVSD5_s1_write                         (mm_interconnect_0_svsd5_s1_write),                     //                                 .write
+		.SVSD5_s1_readdata                      (mm_interconnect_0_svsd5_s1_readdata),                  //                                 .readdata
+		.SVSD5_s1_writedata                     (mm_interconnect_0_svsd5_s1_writedata),                 //                                 .writedata
+		.SVSD5_s1_chipselect                    (mm_interconnect_0_svsd5_s1_chipselect),                //                                 .chipselect
 		.SWITCH_s1_address                      (mm_interconnect_0_switch_s1_address),                  //                        SWITCH_s1.address
 		.SWITCH_s1_write                        (mm_interconnect_0_switch_s1_write),                    //                                 .write
 		.SWITCH_s1_readdata                     (mm_interconnect_0_switch_s1_readdata),                 //                                 .readdata

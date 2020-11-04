@@ -4,7 +4,7 @@
  * Machine generated for CPU 'CPU' in SOPC Builder design 'sistema'
  * SOPC Builder design path: ../../sistema.sopcinfo
  *
- * Generated: Tue Nov 03 19:24:53 CST 2020
+ * Generated: Wed Nov 04 11:17:55 CST 2020
  */
 
 /*
@@ -61,7 +61,7 @@
  */
 
 #define ALT_MODULE_CLASS_BUTTON altera_avalon_pio
-#define BUTTON_BASE 0x9060
+#define BUTTON_BASE 0x90c0
 #define BUTTON_BIT_CLEARING_EDGE_REGISTER 0
 #define BUTTON_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define BUTTON_CAPTURE 0
@@ -88,7 +88,7 @@
  */
 
 #define ALT_MODULE_CLASS_BUZZER altera_avalon_pio
-#define BUZZER_BASE 0x9050
+#define BUZZER_BASE 0x90b0
 #define BUZZER_BIT_CLEARING_EDGE_REGISTER 0
 #define BUZZER_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define BUZZER_CAPTURE 0
@@ -224,30 +224,165 @@
 
 
 /*
- * SVSD configuration
+ * SVSD0 configuration
  *
  */
 
-#define ALT_MODULE_CLASS_SVSD altera_avalon_pio
-#define SVSD_BASE 0x9070
-#define SVSD_BIT_CLEARING_EDGE_REGISTER 0
-#define SVSD_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define SVSD_CAPTURE 0
-#define SVSD_DATA_WIDTH 32
-#define SVSD_DO_TEST_BENCH_WIRING 0
-#define SVSD_DRIVEN_SIM_VALUE 0
-#define SVSD_EDGE_TYPE "NONE"
-#define SVSD_FREQ 50000000
-#define SVSD_HAS_IN 0
-#define SVSD_HAS_OUT 1
-#define SVSD_HAS_TRI 0
-#define SVSD_IRQ -1
-#define SVSD_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define SVSD_IRQ_TYPE "NONE"
-#define SVSD_NAME "/dev/SVSD"
-#define SVSD_RESET_VALUE 0
-#define SVSD_SPAN 16
-#define SVSD_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_SVSD0 altera_avalon_pio
+#define SVSD0_BASE 0x9090
+#define SVSD0_BIT_CLEARING_EDGE_REGISTER 0
+#define SVSD0_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SVSD0_CAPTURE 0
+#define SVSD0_DATA_WIDTH 4
+#define SVSD0_DO_TEST_BENCH_WIRING 0
+#define SVSD0_DRIVEN_SIM_VALUE 0
+#define SVSD0_EDGE_TYPE "NONE"
+#define SVSD0_FREQ 50000000
+#define SVSD0_HAS_IN 0
+#define SVSD0_HAS_OUT 1
+#define SVSD0_HAS_TRI 0
+#define SVSD0_IRQ -1
+#define SVSD0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SVSD0_IRQ_TYPE "NONE"
+#define SVSD0_NAME "/dev/SVSD0"
+#define SVSD0_RESET_VALUE 0
+#define SVSD0_SPAN 16
+#define SVSD0_TYPE "altera_avalon_pio"
+
+
+/*
+ * SVSD1 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_SVSD1 altera_avalon_pio
+#define SVSD1_BASE 0x9080
+#define SVSD1_BIT_CLEARING_EDGE_REGISTER 0
+#define SVSD1_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SVSD1_CAPTURE 0
+#define SVSD1_DATA_WIDTH 4
+#define SVSD1_DO_TEST_BENCH_WIRING 0
+#define SVSD1_DRIVEN_SIM_VALUE 0
+#define SVSD1_EDGE_TYPE "NONE"
+#define SVSD1_FREQ 50000000
+#define SVSD1_HAS_IN 0
+#define SVSD1_HAS_OUT 1
+#define SVSD1_HAS_TRI 0
+#define SVSD1_IRQ -1
+#define SVSD1_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SVSD1_IRQ_TYPE "NONE"
+#define SVSD1_NAME "/dev/SVSD1"
+#define SVSD1_RESET_VALUE 0
+#define SVSD1_SPAN 16
+#define SVSD1_TYPE "altera_avalon_pio"
+
+
+/*
+ * SVSD2 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_SVSD2 altera_avalon_pio
+#define SVSD2_BASE 0x9070
+#define SVSD2_BIT_CLEARING_EDGE_REGISTER 0
+#define SVSD2_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SVSD2_CAPTURE 0
+#define SVSD2_DATA_WIDTH 4
+#define SVSD2_DO_TEST_BENCH_WIRING 0
+#define SVSD2_DRIVEN_SIM_VALUE 0
+#define SVSD2_EDGE_TYPE "NONE"
+#define SVSD2_FREQ 50000000
+#define SVSD2_HAS_IN 0
+#define SVSD2_HAS_OUT 1
+#define SVSD2_HAS_TRI 0
+#define SVSD2_IRQ -1
+#define SVSD2_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SVSD2_IRQ_TYPE "NONE"
+#define SVSD2_NAME "/dev/SVSD2"
+#define SVSD2_RESET_VALUE 0
+#define SVSD2_SPAN 16
+#define SVSD2_TYPE "altera_avalon_pio"
+
+
+/*
+ * SVSD3 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_SVSD3 altera_avalon_pio
+#define SVSD3_BASE 0x9060
+#define SVSD3_BIT_CLEARING_EDGE_REGISTER 0
+#define SVSD3_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SVSD3_CAPTURE 0
+#define SVSD3_DATA_WIDTH 4
+#define SVSD3_DO_TEST_BENCH_WIRING 0
+#define SVSD3_DRIVEN_SIM_VALUE 0
+#define SVSD3_EDGE_TYPE "NONE"
+#define SVSD3_FREQ 50000000
+#define SVSD3_HAS_IN 0
+#define SVSD3_HAS_OUT 1
+#define SVSD3_HAS_TRI 0
+#define SVSD3_IRQ -1
+#define SVSD3_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SVSD3_IRQ_TYPE "NONE"
+#define SVSD3_NAME "/dev/SVSD3"
+#define SVSD3_RESET_VALUE 0
+#define SVSD3_SPAN 16
+#define SVSD3_TYPE "altera_avalon_pio"
+
+
+/*
+ * SVSD4 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_SVSD4 altera_avalon_pio
+#define SVSD4_BASE 0x9050
+#define SVSD4_BIT_CLEARING_EDGE_REGISTER 0
+#define SVSD4_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SVSD4_CAPTURE 0
+#define SVSD4_DATA_WIDTH 4
+#define SVSD4_DO_TEST_BENCH_WIRING 0
+#define SVSD4_DRIVEN_SIM_VALUE 0
+#define SVSD4_EDGE_TYPE "NONE"
+#define SVSD4_FREQ 50000000
+#define SVSD4_HAS_IN 0
+#define SVSD4_HAS_OUT 1
+#define SVSD4_HAS_TRI 0
+#define SVSD4_IRQ -1
+#define SVSD4_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SVSD4_IRQ_TYPE "NONE"
+#define SVSD4_NAME "/dev/SVSD4"
+#define SVSD4_RESET_VALUE 0
+#define SVSD4_SPAN 16
+#define SVSD4_TYPE "altera_avalon_pio"
+
+
+/*
+ * SVSD5 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_SVSD5 altera_avalon_pio
+#define SVSD5_BASE 0x9040
+#define SVSD5_BIT_CLEARING_EDGE_REGISTER 0
+#define SVSD5_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SVSD5_CAPTURE 0
+#define SVSD5_DATA_WIDTH 4
+#define SVSD5_DO_TEST_BENCH_WIRING 0
+#define SVSD5_DRIVEN_SIM_VALUE 0
+#define SVSD5_EDGE_TYPE "NONE"
+#define SVSD5_FREQ 50000000
+#define SVSD5_HAS_IN 0
+#define SVSD5_HAS_OUT 1
+#define SVSD5_HAS_TRI 0
+#define SVSD5_IRQ -1
+#define SVSD5_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SVSD5_IRQ_TYPE "NONE"
+#define SVSD5_NAME "/dev/SVSD5"
+#define SVSD5_RESET_VALUE 0
+#define SVSD5_SPAN 16
+#define SVSD5_TYPE "altera_avalon_pio"
 
 
 /*
@@ -256,7 +391,7 @@
  */
 
 #define ALT_MODULE_CLASS_SWITCH altera_avalon_pio
-#define SWITCH_BASE 0x9040
+#define SWITCH_BASE 0x90a0
 #define SWITCH_BIT_CLEARING_EDGE_REGISTER 0
 #define SWITCH_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SWITCH_CAPTURE 0
@@ -293,19 +428,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/UART"
-#define ALT_STDERR_BASE 0x9080
+#define ALT_STDERR_BASE 0x90d0
 #define ALT_STDERR_DEV UART
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/UART"
-#define ALT_STDIN_BASE 0x9080
+#define ALT_STDIN_BASE 0x90d0
 #define ALT_STDIN_DEV UART
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/UART"
-#define ALT_STDOUT_BASE 0x9080
+#define ALT_STDOUT_BASE 0x90d0
 #define ALT_STDOUT_DEV UART
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -345,7 +480,7 @@
  */
 
 #define ALT_MODULE_CLASS_UART altera_avalon_jtag_uart
-#define UART_BASE 0x9080
+#define UART_BASE 0x90d0
 #define UART_IRQ 1
 #define UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define UART_NAME "/dev/UART"

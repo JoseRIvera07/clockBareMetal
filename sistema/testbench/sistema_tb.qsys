@@ -49,7 +49,7 @@
          type = "int";
       }
    }
-   element sistema_inst_svsd_external_connection_bfm
+   element sistema_inst_svsd0_external_connection_bfm
    {
       datum _sortIndex
       {
@@ -57,11 +57,51 @@
          type = "int";
       }
    }
-   element sistema_inst_switch_external_connection_bfm
+   element sistema_inst_svsd1_external_connection_bfm
    {
       datum _sortIndex
       {
          value = "6";
+         type = "int";
+      }
+   }
+   element sistema_inst_svsd2_external_connection_bfm
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element sistema_inst_svsd3_external_connection_bfm
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element sistema_inst_svsd4_external_connection_bfm
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element sistema_inst_svsd5_external_connection_bfm
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element sistema_inst_switch_external_connection_bfm
+   {
+      datum _sortIndex
+      {
+         value = "11";
          type = "int";
       }
    }
@@ -135,7 +175,7 @@
   <parameter name="INITIAL_RESET_CYCLES" value="50" />
  </module>
  <module
-   name="sistema_inst_svsd_external_connection_bfm"
+   name="sistema_inst_svsd0_external_connection_bfm"
    kind="altera_conduit_bfm"
    version="18.1"
    enabled="1">
@@ -143,7 +183,62 @@
   <parameter name="ENABLE_RESET" value="false" />
   <parameter name="SIGNAL_DIRECTIONS" value="input" />
   <parameter name="SIGNAL_ROLES" value="export" />
-  <parameter name="SIGNAL_WIDTHS" value="32" />
+  <parameter name="SIGNAL_WIDTHS" value="4" />
+ </module>
+ <module
+   name="sistema_inst_svsd1_external_connection_bfm"
+   kind="altera_conduit_bfm"
+   version="18.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="false" />
+  <parameter name="ENABLE_RESET" value="false" />
+  <parameter name="SIGNAL_DIRECTIONS" value="input" />
+  <parameter name="SIGNAL_ROLES" value="export" />
+  <parameter name="SIGNAL_WIDTHS" value="4" />
+ </module>
+ <module
+   name="sistema_inst_svsd2_external_connection_bfm"
+   kind="altera_conduit_bfm"
+   version="18.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="false" />
+  <parameter name="ENABLE_RESET" value="false" />
+  <parameter name="SIGNAL_DIRECTIONS" value="input" />
+  <parameter name="SIGNAL_ROLES" value="export" />
+  <parameter name="SIGNAL_WIDTHS" value="4" />
+ </module>
+ <module
+   name="sistema_inst_svsd3_external_connection_bfm"
+   kind="altera_conduit_bfm"
+   version="18.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="false" />
+  <parameter name="ENABLE_RESET" value="false" />
+  <parameter name="SIGNAL_DIRECTIONS" value="input" />
+  <parameter name="SIGNAL_ROLES" value="export" />
+  <parameter name="SIGNAL_WIDTHS" value="4" />
+ </module>
+ <module
+   name="sistema_inst_svsd4_external_connection_bfm"
+   kind="altera_conduit_bfm"
+   version="18.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="false" />
+  <parameter name="ENABLE_RESET" value="false" />
+  <parameter name="SIGNAL_DIRECTIONS" value="input" />
+  <parameter name="SIGNAL_ROLES" value="export" />
+  <parameter name="SIGNAL_WIDTHS" value="4" />
+ </module>
+ <module
+   name="sistema_inst_svsd5_external_connection_bfm"
+   kind="altera_conduit_bfm"
+   version="18.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="false" />
+  <parameter name="ENABLE_RESET" value="false" />
+  <parameter name="SIGNAL_DIRECTIONS" value="input" />
+  <parameter name="SIGNAL_ROLES" value="export" />
+  <parameter name="SIGNAL_WIDTHS" value="4" />
  </module>
  <module
    name="sistema_inst_switch_external_connection_bfm"
@@ -191,8 +286,63 @@
  <connection
    kind="conduit"
    version="18.1"
-   start="sistema_inst_svsd_external_connection_bfm.conduit"
-   end="sistema_inst.svsd_external_connection">
+   start="sistema_inst_svsd0_external_connection_bfm.conduit"
+   end="sistema_inst.svsd0_external_connection">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="sistema_inst_svsd1_external_connection_bfm.conduit"
+   end="sistema_inst.svsd1_external_connection">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="sistema_inst_svsd2_external_connection_bfm.conduit"
+   end="sistema_inst.svsd2_external_connection">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="sistema_inst_svsd3_external_connection_bfm.conduit"
+   end="sistema_inst.svsd3_external_connection">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="sistema_inst_svsd4_external_connection_bfm.conduit"
+   end="sistema_inst.svsd4_external_connection">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="sistema_inst_svsd5_external_connection_bfm.conduit"
+   end="sistema_inst.svsd5_external_connection">
   <parameter name="endPort" value="" />
   <parameter name="endPortLSB" value="0" />
   <parameter name="startPort" value="" />

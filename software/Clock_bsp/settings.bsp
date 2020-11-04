@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Nov 3, 2020 7:24:52 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1604453092884</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Nov 4, 2020 11:17:53 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1604510273258</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\and-h\Documents\GitHub\clockBareMetal\software\Clock_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\sistema.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>CPU</Cpu>
@@ -911,32 +911,62 @@
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>SWITCH</slaveDescriptor>
+                <slaveDescriptor>SVSD5</slaveDescriptor>
                 <addressRange>0x00009040 - 0x0000904F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>BUZZER</slaveDescriptor>
+                <slaveDescriptor>SVSD4</slaveDescriptor>
                 <addressRange>0x00009050 - 0x0000905F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>BUTTON</slaveDescriptor>
+                <slaveDescriptor>SVSD3</slaveDescriptor>
                 <addressRange>0x00009060 - 0x0000906F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>SVSD</slaveDescriptor>
+                <slaveDescriptor>SVSD2</slaveDescriptor>
                 <addressRange>0x00009070 - 0x0000907F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>SVSD1</slaveDescriptor>
+                <addressRange>0x00009080 - 0x0000908F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>SVSD0</slaveDescriptor>
+                <addressRange>0x00009090 - 0x0000909F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>SWITCH</slaveDescriptor>
+                <addressRange>0x000090A0 - 0x000090AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>BUZZER</slaveDescriptor>
+                <addressRange>0x000090B0 - 0x000090BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>BUTTON</slaveDescriptor>
+                <addressRange>0x000090C0 - 0x000090CF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>UART</slaveDescriptor>
-                <addressRange>0x00009080 - 0x00009087</addressRange>
+                <addressRange>0x000090D0 - 0x000090D7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
