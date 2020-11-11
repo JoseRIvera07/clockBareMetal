@@ -1,12 +1,12 @@
-# system info sistema_tb on 2020.11.04.11:16:36
+# system info sistema_tb on 2020.11.10.17:59:06
 system_info:
 name,value
 DEVICE,EP4CE10E22A7
 DEVICE_FAMILY,Cyclone IV E
-GENERATION_ID,1604510159
+GENERATION_ID,1605052709
 #
 #
-# Files generated for sistema_tb on 2020.11.04.11:16:36
+# Files generated for sistema_tb on 2020.11.10.17:59:06
 files:
 filepath,kind,attributes,module,is_top
 sistema/testbench/sistema_tb/simulation/sistema_tb.v,VERILOG,,sistema_tb,true

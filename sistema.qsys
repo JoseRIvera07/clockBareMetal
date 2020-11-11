@@ -296,16 +296,16 @@
  <module name="BUTTON" kind="altera_avalon_pio" version="18.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
+  <parameter name="captureEdge" value="true" />
   <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
+  <parameter name="direction" value="Input" />
   <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
+  <parameter name="generateIRQ" value="true" />
+  <parameter name="irqType" value="EDGE" />
   <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDoTestBenchWiring" value="true" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="2" />
+  <parameter name="width" value="4" />
  </module>
  <module name="BUZZER" kind="altera_avalon_pio" version="18.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
@@ -393,7 +393,7 @@
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="3" />
+  <parameter name="internalIrqMaskSystemInfo" value="7" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -766,7 +766,6 @@
  <connection kind="clock" version="18.1" start="CLK.clk" end="TIMER.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="BUTTON.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="BUZZER.clk" />
- <connection kind="clock" version="18.1" start="CLK.clk" end="UART.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="SWITCH.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="SVSD0.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="SVSD1.clk" />
@@ -774,6 +773,7 @@
  <connection kind="clock" version="18.1" start="CLK.clk" end="SVSD3.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="SVSD4.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="SVSD5.clk" />
+ <connection kind="clock" version="18.1" start="CLK.clk" end="UART.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="RAM.clk1" />
  <connection kind="interrupt" version="18.1" start="CPU.irq" end="TIMER.irq">
   <parameter name="irqNumber" value="0" />
@@ -781,11 +781,13 @@
  <connection kind="interrupt" version="18.1" start="CPU.irq" end="UART.irq">
   <parameter name="irqNumber" value="1" />
  </connection>
+ <connection kind="interrupt" version="18.1" start="CPU.irq" end="BUTTON.irq">
+  <parameter name="irqNumber" value="2" />
+ </connection>
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="CPU.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="TIMER.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="BUTTON.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="BUZZER.reset" />
- <connection kind="reset" version="18.1" start="CLK.clk_reset" end="UART.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="SWITCH.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="SVSD0.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="SVSD1.reset" />
@@ -793,6 +795,7 @@
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="SVSD3.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="SVSD4.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="SVSD5.reset" />
+ <connection kind="reset" version="18.1" start="CLK.clk_reset" end="UART.reset" />
  <connection
    kind="reset"
    version="18.1"

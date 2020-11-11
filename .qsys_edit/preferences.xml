@@ -8,6 +8,6 @@
   </columns>
  </systemtable>
  <library
-   expandedCategories="Project,Library/Processors and Peripherals,Library,Library/Processors and Peripherals/Peripherals,Library/Interface Protocols,Library/Interface Protocols/PCI Express,Library/Interface Protocols/PCI Express/QSYS Example Designs" />
+   expandedCategories="Library/Basic Functions,Library/Processors and Peripherals,Library/Processors and Peripherals/Inter-Process Communication,Library,Library/Basic Functions/Simulation; Debug and Verification/Simulation,Library/Basic Functions/Simulation; Debug and Verification,Library/Processors and Peripherals/Peripherals,Project" />
  <window width="1366" height="728" x="0" y="0" />
 </preferences>

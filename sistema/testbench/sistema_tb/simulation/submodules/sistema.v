@@ -4,7 +4,7 @@
 
 `timescale 1 ps / 1 ps
 module sistema (
-		output wire [1:0] button_external_connection_export, // button_external_connection.export
+		input  wire [3:0] button_external_connection_export, // button_external_connection.export
 		output wire [9:0] buzzer_external_connection_export, // buzzer_external_connection.export
 		input  wire       clk_clk,                           //                        clk.clk
 		input  wire       reset_reset_n,                     //                      reset.reset_n
@@ -103,6 +103,7 @@ module sistema (
 	wire  [31:0] mm_interconnect_0_svsd5_s1_writedata;                 // mm_interconnect_0:SVSD5_s1_writedata -> SVSD5:writedata
 	wire         irq_mapper_receiver0_irq;                             // TIMER:irq -> irq_mapper:receiver0_irq
 	wire         irq_mapper_receiver1_irq;                             // UART:av_irq -> irq_mapper:receiver1_irq
+	wire         irq_mapper_receiver2_irq;                             // BUTTON:irq -> irq_mapper:receiver2_irq
 	wire  [31:0] cpu_irq_irq;                                          // irq_mapper:sender_irq -> CPU:irq
 	wire         rst_controller_reset_out_reset;                       // rst_controller:reset_out -> [BUTTON:reset_n, BUZZER:reset_n, CPU:reset_n, SVSD0:reset_n, SVSD1:reset_n, SVSD2:reset_n, SVSD3:reset_n, SVSD4:reset_n, SVSD5:reset_n, SWITCH:reset_n, TIMER:reset_n, irq_mapper:reset, mm_interconnect_0:CPU_reset_reset_bridge_in_reset_reset, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                   // rst_controller:reset_req -> [CPU:reset_req, rst_translator:reset_req_in]
@@ -119,7 +120,8 @@ module sistema (
 		.writedata  (mm_interconnect_0_button_s1_writedata),  //                    .writedata
 		.chipselect (mm_interconnect_0_button_s1_chipselect), //                    .chipselect
 		.readdata   (mm_interconnect_0_button_s1_readdata),   //                    .readdata
-		.out_port   (button_external_connection_export)       // external_connection.export
+		.in_port    (button_external_connection_export),      // external_connection.export
+		.irq        (irq_mapper_receiver2_irq)                //                 irq.irq
 	);
 
 	sistema_BUZZER buzzer (
@@ -373,6 +375,7 @@ module sistema (
 		.reset         (rst_controller_reset_out_reset), // clk_reset.reset
 		.receiver0_irq (irq_mapper_receiver0_irq),       // receiver0.irq
 		.receiver1_irq (irq_mapper_receiver1_irq),       // receiver1.irq
+		.receiver2_irq (irq_mapper_receiver2_irq),       // receiver2.irq
 		.sender_irq    (cpu_irq_irq)                     //    sender.irq
 	);
 

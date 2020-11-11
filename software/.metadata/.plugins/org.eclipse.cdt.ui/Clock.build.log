@@ -1,9 +1,22 @@
-19:26:04 **** Incremental Build of configuration Nios II for project Clock ****
+14:01:53 **** Build of configuration Nios II for project Clock ****
 make all 
 Info: Building ../Clock_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Clock_bsp/
 [BSP build complete]
-[Clock build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Clock_bsp//HAL/inc -I../Clock_bsp/ -I../Clock_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:181:15: warning: unused variable 'tt' [-Wunused-variable]
+  volatile int tt = 0;
+               ^
+Info: Linking Clock.elf
+nios2-elf-g++  -T'../Clock_bsp//linker.x' -msys-crt0='../Clock_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Clock_bsp/  -msmallc  -Wl,-Map=Clock.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o Clock.elf obj/default/hello_world_small.o -lm -msys-lib=m
+../Clock_bsp/\libhal_bsp.a(alt_putstr.o): In function `alt_putstr':
+C:\Users\and-h\Documents\GitHub\clockBareMetal\software\Clock_bsp/HAL/src/alt_putstr.c:59: undefined reference to `null'
+C:\Users\and-h\Documents\GitHub\clockBareMetal\software\Clock_bsp/HAL/src/alt_putstr.c:59: undefined reference to `null'
+C:\Users\and-h\Documents\GitHub\clockBareMetal\software\Clock_bsp/HAL/src/alt_putstr.c:59: undefined reference to `ALT_MODULE_CLASS_null_write'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Clock.elf] Error 1
 
-19:26:06 Build Finished (took 1s.211ms)
+14:01:55 Build Finished (took 1s.641ms)
 

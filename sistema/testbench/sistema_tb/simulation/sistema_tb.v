@@ -6,34 +6,34 @@
 module sistema_tb (
 	);
 
-	wire        sistema_inst_clk_bfm_clk_clk;                   // sistema_inst_clk_bfm:clk -> [sistema_inst:clk_clk, sistema_inst_reset_bfm:clk]
-	wire  [1:0] sistema_inst_button_external_connection_export; // sistema_inst:button_external_connection_export -> sistema_inst_button_external_connection_bfm:sig_export
-	wire  [9:0] sistema_inst_buzzer_external_connection_export; // sistema_inst:buzzer_external_connection_export -> sistema_inst_buzzer_external_connection_bfm:sig_export
-	wire  [3:0] sistema_inst_svsd0_external_connection_export;  // sistema_inst:svsd0_external_connection_export -> sistema_inst_svsd0_external_connection_bfm:sig_export
-	wire  [3:0] sistema_inst_svsd1_external_connection_export;  // sistema_inst:svsd1_external_connection_export -> sistema_inst_svsd1_external_connection_bfm:sig_export
-	wire  [3:0] sistema_inst_svsd2_external_connection_export;  // sistema_inst:svsd2_external_connection_export -> sistema_inst_svsd2_external_connection_bfm:sig_export
-	wire  [3:0] sistema_inst_svsd3_external_connection_export;  // sistema_inst:svsd3_external_connection_export -> sistema_inst_svsd3_external_connection_bfm:sig_export
-	wire  [3:0] sistema_inst_svsd4_external_connection_export;  // sistema_inst:svsd4_external_connection_export -> sistema_inst_svsd4_external_connection_bfm:sig_export
-	wire  [3:0] sistema_inst_svsd5_external_connection_export;  // sistema_inst:svsd5_external_connection_export -> sistema_inst_svsd5_external_connection_bfm:sig_export
-	wire  [7:0] sistema_inst_switch_external_connection_export; // sistema_inst:switch_external_connection_export -> sistema_inst_switch_external_connection_bfm:sig_export
-	wire        sistema_inst_reset_bfm_reset_reset;             // sistema_inst_reset_bfm:reset -> sistema_inst:reset_reset_n
+	wire        sistema_inst_clk_bfm_clk_clk;                               // sistema_inst_clk_bfm:clk -> [sistema_inst:clk_clk, sistema_inst_reset_bfm:clk]
+	wire  [3:0] sistema_inst_button_external_connection_bfm_conduit_export; // sistema_inst_button_external_connection_bfm:sig_export -> sistema_inst:button_external_connection_export
+	wire  [9:0] sistema_inst_buzzer_external_connection_export;             // sistema_inst:buzzer_external_connection_export -> sistema_inst_buzzer_external_connection_bfm:sig_export
+	wire  [3:0] sistema_inst_svsd0_external_connection_export;              // sistema_inst:svsd0_external_connection_export -> sistema_inst_svsd0_external_connection_bfm:sig_export
+	wire  [3:0] sistema_inst_svsd1_external_connection_export;              // sistema_inst:svsd1_external_connection_export -> sistema_inst_svsd1_external_connection_bfm:sig_export
+	wire  [3:0] sistema_inst_svsd2_external_connection_export;              // sistema_inst:svsd2_external_connection_export -> sistema_inst_svsd2_external_connection_bfm:sig_export
+	wire  [3:0] sistema_inst_svsd3_external_connection_export;              // sistema_inst:svsd3_external_connection_export -> sistema_inst_svsd3_external_connection_bfm:sig_export
+	wire  [3:0] sistema_inst_svsd4_external_connection_export;              // sistema_inst:svsd4_external_connection_export -> sistema_inst_svsd4_external_connection_bfm:sig_export
+	wire  [3:0] sistema_inst_svsd5_external_connection_export;              // sistema_inst:svsd5_external_connection_export -> sistema_inst_svsd5_external_connection_bfm:sig_export
+	wire  [7:0] sistema_inst_switch_external_connection_export;             // sistema_inst:switch_external_connection_export -> sistema_inst_switch_external_connection_bfm:sig_export
+	wire        sistema_inst_reset_bfm_reset_reset;                         // sistema_inst_reset_bfm:reset -> sistema_inst:reset_reset_n
 
 	sistema sistema_inst (
-		.button_external_connection_export (sistema_inst_button_external_connection_export), // button_external_connection.export
-		.buzzer_external_connection_export (sistema_inst_buzzer_external_connection_export), // buzzer_external_connection.export
-		.clk_clk                           (sistema_inst_clk_bfm_clk_clk),                   //                        clk.clk
-		.reset_reset_n                     (sistema_inst_reset_bfm_reset_reset),             //                      reset.reset_n
-		.svsd0_external_connection_export  (sistema_inst_svsd0_external_connection_export),  //  svsd0_external_connection.export
-		.svsd1_external_connection_export  (sistema_inst_svsd1_external_connection_export),  //  svsd1_external_connection.export
-		.svsd2_external_connection_export  (sistema_inst_svsd2_external_connection_export),  //  svsd2_external_connection.export
-		.svsd3_external_connection_export  (sistema_inst_svsd3_external_connection_export),  //  svsd3_external_connection.export
-		.svsd4_external_connection_export  (sistema_inst_svsd4_external_connection_export),  //  svsd4_external_connection.export
-		.svsd5_external_connection_export  (sistema_inst_svsd5_external_connection_export),  //  svsd5_external_connection.export
-		.switch_external_connection_export (sistema_inst_switch_external_connection_export)  // switch_external_connection.export
+		.button_external_connection_export (sistema_inst_button_external_connection_bfm_conduit_export), // button_external_connection.export
+		.buzzer_external_connection_export (sistema_inst_buzzer_external_connection_export),             // buzzer_external_connection.export
+		.clk_clk                           (sistema_inst_clk_bfm_clk_clk),                               //                        clk.clk
+		.reset_reset_n                     (sistema_inst_reset_bfm_reset_reset),                         //                      reset.reset_n
+		.svsd0_external_connection_export  (sistema_inst_svsd0_external_connection_export),              //  svsd0_external_connection.export
+		.svsd1_external_connection_export  (sistema_inst_svsd1_external_connection_export),              //  svsd1_external_connection.export
+		.svsd2_external_connection_export  (sistema_inst_svsd2_external_connection_export),              //  svsd2_external_connection.export
+		.svsd3_external_connection_export  (sistema_inst_svsd3_external_connection_export),              //  svsd3_external_connection.export
+		.svsd4_external_connection_export  (sistema_inst_svsd4_external_connection_export),              //  svsd4_external_connection.export
+		.svsd5_external_connection_export  (sistema_inst_svsd5_external_connection_export),              //  svsd5_external_connection.export
+		.switch_external_connection_export (sistema_inst_switch_external_connection_export)              // switch_external_connection.export
 	);
 
 	altera_conduit_bfm sistema_inst_button_external_connection_bfm (
-		.sig_export (sistema_inst_button_external_connection_export)  // conduit.export
+		.sig_export (sistema_inst_button_external_connection_bfm_conduit_export)  // conduit.export
 	);
 
 	altera_conduit_bfm_0002 sistema_inst_buzzer_external_connection_bfm (

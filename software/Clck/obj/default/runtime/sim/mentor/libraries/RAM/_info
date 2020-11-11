@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/and-h/Documents/GitHub/clockBareMetal/software/Clck/obj/default/runtime/sim/mentor
+vsistema_RAM
+!s110 1605060605
+!i10b 1
+!s100 Umh_Nz2?^cR2WAdlCb4Yc3
+I45DY2UW=R?LAFA`V<V6;?1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1605052720
+8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_RAM.v
+FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_RAM.v
+L0 21
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1605060605.000000
+!s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_RAM.v|
+!s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_RAM.v|-work|RAM|
+!i113 1
+o-work RAM
+tCvgOpt 0
+nsistema_@r@a@m

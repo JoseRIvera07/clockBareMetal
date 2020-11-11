@@ -4,7 +4,7 @@
  * Machine generated for CPU 'CPU' in SOPC Builder design 'sistema'
  * SOPC Builder design path: ../../sistema.sopcinfo
  *
- * Generated: Wed Nov 04 11:17:55 CST 2020
+ * Generated: Tue Nov 10 13:56:06 CST 2020
  */
 
 /*
@@ -64,18 +64,18 @@
 #define BUTTON_BASE 0x90c0
 #define BUTTON_BIT_CLEARING_EDGE_REGISTER 0
 #define BUTTON_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define BUTTON_CAPTURE 0
+#define BUTTON_CAPTURE 1
 #define BUTTON_DATA_WIDTH 2
 #define BUTTON_DO_TEST_BENCH_WIRING 0
 #define BUTTON_DRIVEN_SIM_VALUE 0
-#define BUTTON_EDGE_TYPE "NONE"
+#define BUTTON_EDGE_TYPE "ANY"
 #define BUTTON_FREQ 50000000
-#define BUTTON_HAS_IN 0
-#define BUTTON_HAS_OUT 1
+#define BUTTON_HAS_IN 1
+#define BUTTON_HAS_OUT 0
 #define BUTTON_HAS_TRI 0
-#define BUTTON_IRQ -1
-#define BUTTON_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define BUTTON_IRQ_TYPE "NONE"
+#define BUTTON_IRQ 2
+#define BUTTON_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define BUTTON_IRQ_TYPE "LEVEL"
 #define BUTTON_NAME "/dev/BUTTON"
 #define BUTTON_RESET_VALUE 0
 #define BUTTON_SPAN 16
@@ -187,7 +187,6 @@
  *
  */
 
-#define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_TIMER
@@ -427,24 +426,18 @@
 #define ALT_NUM_EXTERNAL_INTERRUPT_CONTROLLERS 0
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
-#define ALT_STDERR "/dev/UART"
-#define ALT_STDERR_BASE 0x90d0
-#define ALT_STDERR_DEV UART
-#define ALT_STDERR_IS_JTAG_UART
-#define ALT_STDERR_PRESENT
-#define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDIN "/dev/UART"
-#define ALT_STDIN_BASE 0x90d0
-#define ALT_STDIN_DEV UART
-#define ALT_STDIN_IS_JTAG_UART
-#define ALT_STDIN_PRESENT
-#define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDOUT "/dev/UART"
-#define ALT_STDOUT_BASE 0x90d0
-#define ALT_STDOUT_DEV UART
-#define ALT_STDOUT_IS_JTAG_UART
-#define ALT_STDOUT_PRESENT
-#define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
+#define ALT_STDERR "/dev/null"
+#define ALT_STDERR_BASE 0x0
+#define ALT_STDERR_DEV null
+#define ALT_STDERR_TYPE ""
+#define ALT_STDIN "/dev/null"
+#define ALT_STDIN_BASE 0x0
+#define ALT_STDIN_DEV null
+#define ALT_STDIN_TYPE ""
+#define ALT_STDOUT "/dev/null"
+#define ALT_STDOUT_BASE 0x0
+#define ALT_STDOUT_DEV null
+#define ALT_STDOUT_TYPE ""
 #define ALT_SYSTEM_NAME "sistema"
 
 
@@ -472,24 +465,6 @@
 #define TIMER_TICKS_PER_SEC 1000
 #define TIMER_TIMEOUT_PULSE_OUTPUT 0
 #define TIMER_TYPE "altera_avalon_timer"
-
-
-/*
- * UART configuration
- *
- */
-
-#define ALT_MODULE_CLASS_UART altera_avalon_jtag_uart
-#define UART_BASE 0x90d0
-#define UART_IRQ 1
-#define UART_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define UART_NAME "/dev/UART"
-#define UART_READ_DEPTH 64
-#define UART_READ_THRESHOLD 8
-#define UART_SPAN 8
-#define UART_TYPE "altera_avalon_jtag_uart"
-#define UART_WRITE_DEPTH 64
-#define UART_WRITE_THRESHOLD 8
 
 
 /*

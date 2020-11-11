@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/and-h/Documents/GitHub/clockBareMetal/software/Clck/obj/default/runtime/sim/mentor
+vsistema_UART
+Z1 !s110 1605060605
+!i10b 1
+!s100 Nz@2k4z^jajOgI_laFRTW3
+Ia5jIiaKR4BMlC3DdW=d;41
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1605052722
+Z4 8C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_UART.v
+Z5 FC:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_UART.v
+L0 331
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1605060604.000000
+Z8 !s107 C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_UART.v|
+Z9 !s90 -reportprogress|300|C:/Users/and-h/Documents/GitHub/clockBareMetal/sistema/testbench/sistema_tb/simulation/submodules/sistema_UART.v|-work|UART|
+!i113 1
+Z10 o-work UART
+Z11 tCvgOpt 0
+nsistema_@u@a@r@t
+vsistema_UART_scfifo_r
+R1
+!i10b 1
+!s100 =NaBAASKR3CgjD3JA:GcP0
+I9kI[nNJe82LJn5MlFGYN<1
+R2
+R0
+R3
+R4
+R5
+L0 243
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nsistema_@u@a@r@t_scfifo_r
+vsistema_UART_scfifo_w
+Z12 !s110 1605060604
+!i10b 1
+!s100 QcfYM;6jXa<HM<ceh]FTG1
+IcQ7koBjic;c;?jS2UNGlS3
+R2
+R0
+R3
+R4
+R5
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nsistema_@u@a@r@t_scfifo_w
+vsistema_UART_sim_scfifo_r
+R1
+!i10b 1
+!s100 1LzL4f<bf4k[5]]:nIDoT0
+ILeTY]bie<=Yj64nFQHWXX1
+R2
+R0
+R3
+R4
+R5
+L0 164
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nsistema_@u@a@r@t_sim_scfifo_r
+vsistema_UART_sim_scfifo_w
+R12
+!i10b 1
+!s100 Qz>RU6CzR5oaPiDKO?QY_0
+I?L[JZBKMmDSQGMnUR_gOH2
+R2
+R0
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nsistema_@u@a@r@t_sim_scfifo_w
